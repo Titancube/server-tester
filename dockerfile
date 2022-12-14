@@ -1,4 +1,4 @@
-FROM node:18
+FROM node:18-alpine
 
 LABEL maintainer="kbin0717@gmail.com"
 LABEL name="Gyubin Lee"
