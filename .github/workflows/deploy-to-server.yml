@@ -17,7 +17,7 @@ jobs:
       - name: Adding known Hosts
         run: ssh-keyscan -H -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
 
-      - name: Restart Node Server
+      - name: Pull repository
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.SSH_HOST }}
@@ -27,4 +27,5 @@ jobs:
           script: |
             cd ~/dev/server-tester
             git pull origin main
-            ./container-check.sh
+      - name: Start container
+        run: ./container-check.sh
