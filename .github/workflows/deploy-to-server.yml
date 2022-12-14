@@ -28,4 +28,4 @@ jobs:
             cd ~/dev/server-tester
             git pull origin main
             yarn install
-            yarn start --port=80
+            yarn start --port=8005
