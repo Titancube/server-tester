@@ -27,4 +27,4 @@ jobs:
           script: |
             cd ~/dev/server-tester
             git pull origin main
-            bash ./container-check.sh
+            sh ./container-check.sh

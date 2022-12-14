@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 echo "# Checking if docker container exists"
 if [ "$(docker container inspect -f '{{.State.Status}}' server-tester)" == "true" ];
