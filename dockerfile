@@ -8,6 +8,7 @@ RUN mkdir -p /app
 WORKDIR /app
 ADD . /app
 RUN yarn install
+RUN yarn global add typescript
 
 EXPOSE 3000
 
