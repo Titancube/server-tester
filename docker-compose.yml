@@ -2,6 +2,7 @@ version: '3.9'
 services:
   server-tester:
     image: titancube/server-tester
+    container_name: server-tester
     ports:
       - 8005:3000
     restart: unless-stopped
