@@ -6,13 +6,19 @@
   "author": "info@titancube.me",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js"
+    "start": "tsc && node dist/index.js",
+    "build": "tsc",
+    "dev": "ts-node src/index.ts"
   },
   "dependencies": {
+    "command-line-args": "^5.2.1",
     "cors": "^2.8.5",
     "express": "^4.18.2"
   },
   "devDependencies": {
-    "@types/express": "^4.17.14"
+    "@types/command-line-args": "^5.2.0",
+    "@types/express": "^4.17.14",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1"
   }
 }
