@@ -27,5 +27,4 @@ jobs:
           script: |
             cd ~/dev/server-tester
             git pull origin main
-            docker rm -f server-tester
-            docker compose up -d
+            ./container-check.sh
