@@ -3,5 +3,5 @@ RUN mkdir -p /app
 WORKDIR /app
 ADD . /app
 RUN yarn install
-EXPOSE 8004 8004
-CMD ["yarn", "start"]
+EXPOSE 3000
+CMD ["yarn", "start", "--port=3000"]

@@ -27,5 +27,5 @@ jobs:
           script: |
             cd ~/dev/server-tester
             git pull origin main
-            yarn install
-            yarn start --port=8005
+            docker rm -f server-tester
+            docker compose up -d

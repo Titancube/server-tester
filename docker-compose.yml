@@ -1,0 +1,8 @@
+version: '3.9'
+services:
+  server-tester:
+    ports:
+      - 8004:5000
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
