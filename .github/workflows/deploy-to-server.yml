@@ -28,4 +28,5 @@ jobs:
             cd ~/dev/server-tester
             git pull origin main
             docker build -t titancube/server-tester .
+            docker push titancube/server-tester
             sh ./container-check.sh
