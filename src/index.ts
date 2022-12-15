@@ -13,7 +13,7 @@ if ([null, undefined, ''].includes(options.port)) {
 
 app.get('/', (req: Request, res: Response, next: NextFunction) => {
   try {
-    return res.status(200).send('Success');
+    return res.status(200).send('Under construction. See you later');
   } catch (error) {
     return res.status(500).send('Error');
   }
